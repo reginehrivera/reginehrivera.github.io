@@ -180,9 +180,8 @@ h6 {
 .header .logo h1 {
   margin: 0;
   color: var(--heading-color);
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .header .social-links {
@@ -790,7 +789,7 @@ section .container {
   }
 
   .hero-img img {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
@@ -800,18 +799,17 @@ section .container {
   }
 
   .hero-img img {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
 @media (max-width: 435px) {
   .hero-img {
-    padding-left: 55px;
+    width: 135%;
+    right: 35px;
   }
   .hero-img img {
-    width: 100%;
-    max-width: 200px;
-    margin-top: 320px;
+    margin-top: 60px;
   }
 
   .hero h2 {
@@ -827,7 +825,7 @@ section .container {
   }
 
   .hero .container {
-    top: 40px;
+    top: 30px;
   }
 }
 
@@ -837,7 +835,7 @@ section .container {
   }
   .hero-img img {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     margin-top: 25px;
   }
 
@@ -913,10 +911,10 @@ section .container {
 }
 
 @media (max-width: 768px) {
-  .col-lg-4 img {
-    width: 60vw;
+  .my-img img {
+    width: 75vw;
     margin-bottom: 3rem;
-    left: 50px;
+    left: 10px;
   }
 }
 
