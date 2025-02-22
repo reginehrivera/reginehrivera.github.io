@@ -805,11 +805,11 @@ section .container {
 
 @media (max-width: 435px) {
   .hero-img {
-    width: 135%;
-    right: 35px;
+    width: 130%;
+    right: 38px;
   }
   .hero-img img {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 
   .hero h2 {
@@ -825,7 +825,7 @@ section .container {
   }
 
   .hero .container {
-    top: 30px;
+    top: 20px;
   }
 }
 
@@ -1267,7 +1267,7 @@ section .container {
   }
 
   .portfolio .portfolio-wrap .portfolio-links a {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .portfolio .portfolio-wrap .portfolio-info h4 {
@@ -1275,7 +1275,7 @@ section .container {
   }
 
   .portfolio .portfolio-wrap .portfolio-info p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
