@@ -487,6 +487,8 @@ section .container {
   background-image: url("../img/bg.gif");
   background-position: right center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #about::before,
