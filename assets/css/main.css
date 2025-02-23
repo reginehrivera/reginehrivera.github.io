@@ -164,7 +164,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 5px solid color-mix(in srgb, var(--heading-color), transparent 20%);
 }
 
 .header .logo {
@@ -193,7 +193,7 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: color-mix(in srgb, var(--default-color), transparent 85%);
   color: var(--default-color);
   margin: 0 2px;
   border-radius: 50%;
@@ -286,28 +286,6 @@ h6 {
   margin-right: 10px;
 }
 
-.navmenu a .toggle-dropdown,
-.navmenu a:focus .toggle-dropdown {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: auto;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  flex-shrink: 0;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-}
-
-.navmenu a .toggle-dropdown:hover,
-.navmenu a:focus .toggle-dropdown:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
@@ -318,49 +296,6 @@ h6 {
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
   color: var(--accent-color);
-}
-
-.navmenu .active .toggle-dropdown,
-.navmenu .active:focus .toggle-dropdown {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: rotate(180deg);
-}
-
-.navmenu .dropdown {
-  display: block;
-}
-
-.navmenu .dropdown a,
-.navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
-}
-
-.navmenu .dropdown a:hover,
-.navmenu .dropdown .active,
-.navmenu .dropdown .active:focus {
-  color: var(--nav-dropdown-hover-color);
-}
-
-.navmenu .dropdown ul {
-  position: static;
-  display: none;
-  z-index: 99;
-  padding: 5px 10px;
-  margin: 5px 10px;
-  background-color: var(--nav-dropdown-background-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.navmenu .dropdown ul ul {
-  background-color: rgba(33, 37, 41, 0.1);
-}
-
-.navmenu .dropdown > .dropdown-active {
-  display: block;
-  background-color: rgba(33, 37, 41, 0.03);
 }
 
 .credits {
@@ -668,7 +603,7 @@ section .container {
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--heading-color);
 }
 
 .hero .social-links {
@@ -987,7 +922,7 @@ section .container {
 }
 
 .skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
   height: 10px;
 }
 
@@ -1360,7 +1295,7 @@ section .container {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #deb9fd, transparent 5%);
   margin: 0;
 }
 
@@ -1451,7 +1386,7 @@ section .container {
 .contact .info-item i {
   font-size: 20px;
   color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  background: color-mix(in srgb, var(--accent-color), transparent 75%);
   width: 44px;
   height: 44px;
   display: flex;
@@ -1481,7 +1416,7 @@ section .container {
 }
 
 .contact .php-email-form {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1501,8 +1436,8 @@ section .container {
   box-shadow: none;
   border-radius: 0;
   color: #000000;
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  background-color: var(--heading-color);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 100%);
 }
 
 .contact .php-email-form input[type="text"]:focus,
