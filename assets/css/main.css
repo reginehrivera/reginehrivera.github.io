@@ -1,15 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
@@ -598,9 +586,10 @@ section .container {
   font-weight: 700;
 }
 
-.hero p {
+.hero p,
+h3 {
   margin: 5px 0 0 0;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .hero p span {
@@ -676,22 +665,25 @@ section .container {
   .hero-img {
     flex-direction: column;
     text-align: center;
-    padding-left: 40px;
+    left: 50px;
     margin-bottom: 0%;
   }
 
   .hero-img img {
     margin-top: 10%;
-    width: 100%;
-    left: 10px;
+    width: 110%;
   }
 
   .hero h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .hero p {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .hero h3 {
+    font-size: 30px;
   }
 
   .hero .container {
@@ -708,7 +700,7 @@ section .container {
   }
 
   .hero p {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .hero-img img {
@@ -722,7 +714,7 @@ section .container {
   }
 
   .hero p {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .hero-img img {
@@ -736,17 +728,18 @@ section .container {
   }
 
   .hero-img img {
-    max-width: 350px;
+    max-width: 300px;
+    right: 20px;
   }
 }
 
 @media (max-width: 435px) {
   .hero-img {
-    width: 130%;
-    right: 38px;
+    width: 120%;
   }
   .hero-img img {
     margin-top: 50px;
+    right: 40px;
   }
 
   .hero h2 {
@@ -757,12 +750,8 @@ section .container {
     font-size: 24px;
   }
 
-  .hero h3 {
-    top: 300%;
-  }
-
   .hero .container {
-    top: 20px;
+    top: 10px;
   }
 }
 
