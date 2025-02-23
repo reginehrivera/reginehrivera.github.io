@@ -366,11 +366,11 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: -15px;
+  bottom: -35px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50px;
   transition: all 0.4s;
 }
@@ -389,7 +389,7 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 35px;
 }
 
 /*--------------------------------------------------------------
@@ -868,7 +868,7 @@ section .container {
   width: 100%;
   position: relative;
   text-align: center;
-  background-color: rgba(105, 26, 196, 0.5);
+  background-color: rgba(105, 26, 196, 0.39);
 }
 
 .counts .count-box i {
