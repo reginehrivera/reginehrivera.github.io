@@ -173,16 +173,15 @@ h6 {
   position: relative;
   width: 130px;
   height: 130px;
-  margin: 15px auto;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-/* Profile Image */
 .header .profile-img img {
-  width: 120px;
+  width: 130px;
   border-radius: 50%;
   border: 5px solid #6802bb;
   position: relative;
@@ -204,7 +203,7 @@ h6 {
 
 .header .logo {
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .header .logo img {
@@ -518,9 +517,14 @@ h6 {
 }
 
 .scroll-top:hover {
-  color: var(--contrast-color);
-  background-color: color-mix(in srgb, #551888 90%, white 15%);
+  color: white;
+  background-color: color-mix(in srgb, #551888 90%, white 10%);
 }
+
+.scroll-top i:hover {
+  color: #000;
+}
+
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
@@ -666,7 +670,6 @@ section .container {
   font-family: "Bai Jamjuree", serif;
   font-weight: 700;
   font-size: 36px;
-
   margin-top: -10px;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -775,18 +778,28 @@ h3 {
   margin-right: 50px;
 }
 
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .hero-img img:hover {
   box-shadow: 0 0 25px var(--accent-color), 0 0 35px var(--accent-color),
     0 0 45px var(--accent-color);
 }
 
-/* Button Container */
 .hero-buttons {
   margin-top: 30px;
   display: flex;
 }
 
-/* Download CV Button */
 .cv-btn {
   background: rgba(167, 167, 167, 0.2);
   color: white;
@@ -803,14 +816,12 @@ h3 {
   min-width: 100px;
 }
 
-/* Hover Effect */
 .cv-btn:hover {
   background: white;
   color: #440596;
   transform: scale(1.05);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .hero-buttons {
     justify-content: center;
@@ -826,18 +837,6 @@ h3 {
 @media (max-width: 1100px) {
   .hero-buttons {
     justify-content: center;
-  }
-}
-
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-1.1rem);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
@@ -892,12 +891,12 @@ h3 {
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 25px;
   }
 
   .hero h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .hero p {
@@ -912,7 +911,7 @@ h3 {
 
 @media (max-width: 468px) {
   .hero h2 {
-    font-size: 38px;
+    font-size: 48px;
   }
 }
 
@@ -975,17 +974,35 @@ h3 {
   }
 }
 
+@media (max-width: 1000px) {
+  .my-img img {
+    width: 35vw;
+    margin-bottom: 2rem;
+    top: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .my-img img {
-    width: 75vw;
+    width: 50vw;
     margin-bottom: 3rem;
-    left: 20px;
+    left: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .my-img img {
+    width: 60vw;
+    margin-bottom: 2rem;
+    left: 55px;
   }
 }
 
 @media (max-width: 458px) {
   .my-img img {
-    left: 10px;
+    width: 70vw;
+    left: 15px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -993,16 +1010,16 @@ h3 {
 # Count Section
 --------------------------------------------------------------*/
 .counts {
-  padding: 60px 0 40px;
+  padding: 70px 0 60px;
   margin-top: -50px;
 }
 
 .counts .count-box {
-  padding: 30px 30px 20px 30px;
+  padding: 30px 30px 25px 30px;
   width: 100%;
   position: relative;
   text-align: center;
-  background-color: rgba(105, 26, 196, 0.39);
+  background-color: rgba(105, 26, 196, 0.35);
 }
 
 .counts .count-box i {
@@ -1185,7 +1202,7 @@ h3 {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .portfolio .portfolio-item img {
@@ -1435,7 +1452,6 @@ h3 {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-
   min-height: 400px;
   height: 100%;
 }
@@ -1482,7 +1498,7 @@ h3 {
 }
 
 .testimonials .testimonial-item p {
-  flex-grow: 1; /* Expands the paragraph to fill available space */
+  flex-grow: 1;
   display: flex;
   font-style: italic;
   margin: 0 15px 15px 15px;
