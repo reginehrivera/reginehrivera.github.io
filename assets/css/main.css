@@ -1084,12 +1084,20 @@ h3 {
 
 /* Carousel transition speed */
 .carousel-inner {
-  top: 15px;
+  top: 30px;
   transition: transform 1s ease-in-out;
+  margin-bottom: 70px;
+}
+
+.certificate-img {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .carousel-indicators {
-  bottom: -30px;
+  margin-bottom: 90px;
 }
 
 .cert-title {
@@ -1112,6 +1120,16 @@ h3 {
   .carousel-inner img {
     width: 80% !important;
     transition: width 0.3s ease-in-out;
+  }
+
+  .certificate-img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 348px) {
+  .certificate-img {
+    max-width: 65%;
   }
 }
 
