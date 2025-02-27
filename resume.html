@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>My Personal Website</title>
+    <title>Regine H. Rivera</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
+    <link href="assets/img/purple.png" rel="icon" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
@@ -47,12 +45,20 @@
     <header id="header" class="header dark-background d-flex flex-column">
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
+      <!-- Profile Image (Clickable) -->
       <div class="profile-img">
         <img
           src="assets/img/profile-img.jpg"
-          alt=""
+          alt="Profile Image"
           class="img-fluid rounded-circle"
+          id="profileImage"
         />
+      </div>
+
+      <!-- Modal (Hidden by Default) -->
+      <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg" />
       </div>
 
       <a
@@ -115,6 +121,7 @@
             <a
               href="https://drive.google.com/file/d/1mvCaJrRMCWhQSWr1-nY9kTW1Trg2cfU5/view?usp=sharing"
               target="_blank"
+              title="See my Resume!"
               style="
                 margin-left: 10px;
                 text-decoration: none;
@@ -362,7 +369,9 @@
     ></a>
 
     <!-- Preloader -->
-    <div id="preloader"></div>
+    <div id="preloader">
+      <img src="assets/img/loader.png" alt="Loading..." id="preloader-img" />
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

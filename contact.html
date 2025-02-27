@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>My Personal Website</title>
+    <title>Regine H. Rivera</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
+    <link href="assets/img/purple.png" rel="icon" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
@@ -45,12 +43,20 @@
     <header id="header" class="header dark-background d-flex flex-column">
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
+      <!-- Profile Image (Clickable) -->
       <div class="profile-img">
         <img
           src="assets/img/profile-img.jpg"
-          alt=""
+          alt="Profile Image"
           class="img-fluid rounded-circle"
+          id="profileImage"
         />
+      </div>
+
+      <!-- Modal (Hidden by Default) -->
+      <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg" />
       </div>
 
       <a
@@ -119,7 +125,7 @@
                 >
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
-                    <h3>Address</h3>
+                    <h3>Address:</h3>
                     <p>P-3 San Isidro, Las Nieves, Agusan del Norte</p>
                   </div>
                 </div>
@@ -132,7 +138,7 @@
                 >
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
-                    <h3>Call</h3>
+                    <h3>Call Me:</h3>
                     <p>+63 951 0270 189</p>
                   </div>
                 </div>
@@ -145,12 +151,21 @@
                 >
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
-                    <h3>Email</h3>
+                    <h3>Email Me:</h3>
                     <p>regineheraldezrivera@gmail.com</p>
                   </div>
                 </div>
                 <!-- End Info Item -->
+              </div>
+            </div>
 
+            <div class="col-lg-7">
+              <div class="loc-wrap">
+                <div
+                  class="loc-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.0000000000005!2d125.6277!3d8.7286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3300000000000000%3A0x0000000000000000!2sPurok%203%2C%20San%20Isidro%2C%20Las%20Nieves%2C%20Agusan%20del%20Norte!5e0!3m2!1sen!2sph!4v1610000000000!5m2!1sen!2sph"
                   frameborder="0"
@@ -159,77 +174,9 @@
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
-              </div>
             </div>
 
-            <div class="col-lg-7">
-              <form
-                action=""
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
-                onsubmit="sendMessage(event)"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <label for="name-field" class="pb-2">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name-field"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="email-field" class="pb-2">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email-field"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <label for="subject-field" class="pb-2">Subject</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject-field"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <label for="message-field" class="pb-2">Message</label>
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="10"
-                      id="message-field"
-                      required
-                    ></textarea>
-                  </div>
-
-        
-
-                    <button type="submit" id="send-button">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <script>
-              function sendMessage(event) {
-                event.preventDefault();
-                alert("Your message has been sent. Thank You!");
-              }
-            </script>
+           
 
             <!-- End Contact Form -->
           </div>
@@ -253,8 +200,10 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- Preloader -->
-    <div id="preloader">
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/loader.png" alt="Loading..." id="preloader-img" />
+  </div>
     
     </div>
 

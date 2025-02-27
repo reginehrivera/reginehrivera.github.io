@@ -285,4 +285,33 @@
    * Initiate Pure Counter
    */
   new PureCounter();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const profileImage = document.getElementById("profileImage");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeModal = document.getElementById("closeModal");
+
+    // Toggle modal when profile image is clicked
+    profileImage.addEventListener("click", function () {
+      if (modal.classList.contains("show")) {
+        modal.classList.remove("show");
+      } else {
+        modalImg.src = profileImage.src;
+        modal.classList.add("show");
+      }
+    });
+
+    // Close modal when "X" button is clicked
+    closeModal.addEventListener("click", function () {
+      modal.classList.remove("show");
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.classList.remove("show");
+      }
+    });
+  });
 })();

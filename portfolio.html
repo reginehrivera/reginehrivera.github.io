@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>My Personal Website</title>
+    <title>Regine H. Rivera</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
+   <!-- Favicons -->
+   <link href="assets/img/purple.png" rel="icon" />
     <!-- Boxicons CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -54,12 +53,20 @@
     <header id="header" class="header dark-background d-flex flex-column">
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <div class="profile-img">
+       <!-- Profile Image (Clickable) -->
+       <div class="profile-img">
         <img
           src="assets/img/profile-img.jpg"
-          alt=""
+          alt="Profile Image"
           class="img-fluid rounded-circle"
+          id="profileImage"
         />
+      </div>
+
+      <!-- Modal (Hidden by Default) -->
+      <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg" />
       </div>
 
       <a
@@ -476,9 +483,7 @@
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
                     <span
-                      >Regine is one of the most hardworking and reliable
-                      friends I know. She never hesitates to help whenever we
-                      struggle with coding or design!</span
+                      >Regine is trustworthy in every situation, she is also responsible   especially in academic activities. Regine is tough, although she cries, she still continues to pursue her goals in life. Fighting regine!</span
                     >
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
@@ -520,10 +525,9 @@
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
                     <span
-                      >Regine has a great eye for detail and makes sure that our
-                      work is both functional and visually appealing. She's
-                      super talented and always willing to share her
-                      knowledge!</span
+                      >Regine understands the discussions quickly and is always
+                      ready to help me or us, especially with coding. She’s really 
+                      supportive and makes things easier to learn!</span
                     >
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
@@ -532,7 +536,7 @@
                     class="testimonial-img"
                     alt=""
                   />
-                  <h3>Antonio Granza</h3>
+                  <h3>Jana Aera Senoc</h3>
                   <h4>BSIS Student</h4>
                 </div>
               </div>
@@ -543,9 +547,9 @@
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
                     <span
-                      >One of the best classmates to work with! Regine brings
-                      enthusiasm, creativity, and technical skills to every
-                      project we do together!</span
+                      >Regine is truly hardworking and dedicated to every task. 
+                      She always ensures that everything is done with
+                      effort and commitment.</span
                     >
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
@@ -554,7 +558,7 @@
                     class="testimonial-img"
                     alt=""
                   />
-                  <h3>Earl Josh Menion</h3>
+                  <h3>Louis Dave Nicario</h3>
                   <h4>BSIS Student</h4>
                 </div>
               </div>
@@ -584,6 +588,7 @@
 
     <!-- Preloader -->
     <div id="preloader">
+      <img src="assets/img/loader.png" alt="Loading..." id="preloader-img" />
     </div>
 
     <!-- Vendor JS Files -->
