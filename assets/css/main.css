@@ -1420,13 +1420,9 @@ h3 {
 }
 
 .testimonials .testimonial-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  box-sizing: content-box;
   text-align: center;
-  min-height: 400px;
-  height: 100%;
+  min-height: 340px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1458,21 +1454,17 @@ h3 {
   display: inline-block;
   left: -5px;
   position: relative;
-  left: 0;
-  top: -70px;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
-
+  right: -5px;
   position: relative;
-  bottom: -70px;
+  top: 10px;
   transform: scale(-1, -1);
 }
 
 .testimonials .testimonial-item p {
-  flex-grow: 1;
-  display: flex;
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
@@ -1481,7 +1473,6 @@ h3 {
   margin-bottom: 35px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  align-items: center;
 }
 
 .testimonials .testimonial-item p::after {
@@ -1497,8 +1488,7 @@ h3 {
 }
 
 .testimonials .swiper-wrapper {
-  display: flex;
-  align-items: stretch;
+  height: auto;
 }
 
 .testimonials .swiper-pagination {
