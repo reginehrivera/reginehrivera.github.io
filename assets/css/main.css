@@ -822,18 +822,6 @@ h3 {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .cv-btn {
-    font-size: 15px;
-    padding: 6px 15px;
-    min-width: 140px;
-  }
-}
-
 @media (max-width: 1100px) {
   .hero-buttons {
     justify-content: center;
@@ -854,7 +842,6 @@ h3 {
 
   .hero .container {
     max-width: 100%;
-    margin-bottom: 30px;
     top: -10px;
   }
 
@@ -862,7 +849,7 @@ h3 {
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 30px;
   }
 
@@ -883,7 +870,6 @@ h3 {
 
   .hero .container {
     max-width: 100%;
-    margin-bottom: 30px;
     top: -10px;
   }
 
@@ -905,7 +891,17 @@ h3 {
 
   .hero-img img {
     max-width: 300px;
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .cv-btn {
+    font-size: 15px;
+    padding: 6px 15px;
+    min-width: 140px;
   }
 }
 
