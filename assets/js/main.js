@@ -67,6 +67,10 @@
       once: true,
       mirror: false,
     });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500); // Ensure refresh after elements load
   }
   window.addEventListener("load", aosInit);
 

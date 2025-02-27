@@ -78,58 +78,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #440596;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -145,7 +93,7 @@ h6 {
   overflow-y: hidden;
   z-index: 997;
   border-right: 1px solid;
-  border: 2px solid transparent; /* Space for the animated border */
+  border: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: linear-gradient(0deg, purple, white, purple);
   animation: spin-border 10s linear infinite;
@@ -584,7 +532,7 @@ section,
   position: relative;
   color: var(--contrast-color);
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 80px 0;
+  padding: 60px 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -699,7 +647,7 @@ section .container {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: row; /* Align items horizontally */
+  flex-direction: row;
   justify-content: flex-end;
   text-align: left;
   margin: 0;
@@ -1355,59 +1303,6 @@ h3 {
 }
 
 /*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.services .service-item {
-  position: relative;
-}
-
-.services .service-item .icon {
-  background: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid var(--accent-color);
-  margin-right: 20px;
-}
-
-.services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .service-item:hover .icon {
-  background: var(--surface-color);
-}
-
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
-}
-
-.services .service-item .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .service-item .title a {
-  color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-  color: var(--accent-color);
-}
-
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
@@ -1418,7 +1313,7 @@ h3 {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
-  min-height: 340px;
+  min-height: 320px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
