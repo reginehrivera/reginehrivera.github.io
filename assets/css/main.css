@@ -946,32 +946,8 @@ h3 {
 }
 
 .my-img img {
-  width: 25vw;
-  border-radius: 50%;
-  box-shadow: 0 0 25px var(--accent-color);
-  cursor: pointer;
-  top: 22px;
-  animation: floatImage 4s ease-in-out infinite;
-  transition: 0.4s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.my-img img:hover {
-  box-shadow: 0 0 25px var(--accent-color), 0 0 35px var(--accent-color),
-    0 0 45px var(--accent-color);
-}
-
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-1.1rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  top: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 1000px) {
@@ -986,22 +962,19 @@ h3 {
   .my-img img {
     width: 50vw;
     margin-bottom: 3rem;
-    left: 55px;
   }
 }
 
 @media (max-width: 600px) {
   .my-img img {
-    width: 60vw;
+    width: 50vw;
     margin-bottom: 2rem;
-    left: 55px;
   }
 }
 
 @media (max-width: 458px) {
   .my-img img {
-    width: 70vw;
-    left: 15px;
+    width: 80vw;
     margin-bottom: 1rem;
   }
 }
