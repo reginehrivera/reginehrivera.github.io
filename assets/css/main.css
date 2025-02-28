@@ -137,6 +137,10 @@ h6 {
   animation: floatUpDown 4s ease-in-out infinite;
 }
 
+.header .profile-img img:hover {
+  border: 5px solid #ffffff;
+}
+
 @keyframes floatUpDown {
   0% {
     transform: translateY(0px);
