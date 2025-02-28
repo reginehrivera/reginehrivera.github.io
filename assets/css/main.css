@@ -1533,14 +1533,12 @@ h3 {
 }
 
 .contact .info-item h3 {
-  padding: 0;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .contact .info-item p {
-  padding: 0;
   margin-bottom: 0;
   font-size: 16px;
 }
@@ -1553,17 +1551,25 @@ h3 {
 .info-wrap {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
   background: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 475px) {
+@media (max-width: 368px) {
   .contact .info-item i {
-    font-size: 24px;
-    width: 46px;
-    height: 46px;
+    font-size: 22px;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+  }
+
+  .contact .info-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .contact .info-item p {
+    font-size: 13px;
   }
 }
