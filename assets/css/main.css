@@ -779,9 +779,19 @@ h3 {
   }
 }
 
+@media (min-height: 800px) {
+  .hero .container {
+    margin-top: 110px;
+  }
+
+  .hero-img {
+    margin-left: 50px;
+  }
+}
+
 @media (max-width: 1300px) {
   .hero-img {
-    margin-left: 90px;
+    margin-left: 40px;
   }
 }
 
@@ -813,7 +823,7 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -859,6 +869,22 @@ h3 {
 @media (max-width: 468px) {
   .hero h2 {
     font-size: 48px;
+  }
+
+  .hero .container {
+    top: -60px;
+  }
+}
+
+@media (max-width: 378px) {
+  .hero .container {
+    top: 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .hero .container {
+    top: -50px;
   }
 }
 
@@ -1517,21 +1543,6 @@ h3 {
 
 @media (max-width: 575px) {
   .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .loc-wrap {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  border-color: #9746da;
-}
-
-@media (max-width: 575px) {
-  .contact .loc-wrap {
     padding: 20px;
   }
 }
