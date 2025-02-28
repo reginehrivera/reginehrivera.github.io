@@ -878,7 +878,7 @@ h3 {
 
 @media (max-width: 378px) {
   .hero .container {
-    margin-top: 60px;
+    margin-top: 57px;
   }
 }
 
@@ -1496,6 +1496,15 @@ h3 {
   border-radius: 10px;
   border: 1px solid transparent;
   border-color: #9746da;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 575px) {
