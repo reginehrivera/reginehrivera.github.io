@@ -566,6 +566,7 @@ section .container {
 #hero,
 #about,
 #skills,
+#interests,
 #contact,
 #counts,
 #portfolio,
@@ -580,6 +581,7 @@ section .container {
 
 #about::before,
 #skills::before,
+#interests::before,
 #contact::before,
 #counts::before,
 #portfolio::before,
@@ -597,6 +599,7 @@ section .container {
 
 #about *,
 #skills *,
+#interests *,
 #contact *,
 #counts *,
 #portfolio *,
@@ -1019,6 +1022,46 @@ h3 {
   100% {
     background-position: -200% 0;
   }
+}
+
+/*--------------------------------------------------------------
+# Interests Section
+--------------------------------------------------------------*/
+.interests .features-item {
+  background-color: rgba(105, 26, 196, 0.35);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 90%);
+  position: relative;
+}
+
+.interests .features-item i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 0;
+}
+
+.interests .features-item h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.interests .features-item h3 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.interests .features-item:hover {
+  border-color: var(--accent-color);
+}
+
+.interests .features-item:hover h3 a {
+  color: #ff50ff;
 }
 
 /*--------------------------------------------------------------
