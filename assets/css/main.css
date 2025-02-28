@@ -773,9 +773,9 @@ h3 {
   transform: scale(1.05);
 }
 
-@media (max-width: 1100px) {
-  .hero-buttons {
-    justify-content: center;
+@media (max-width: 1300px) {
+  .hero-img {
+    margin-left: 40px;
   }
 }
 
@@ -801,13 +801,15 @@ h3 {
     text-align: center;
   }
 
+  .hero-buttons {
+    justify-content: center;
+  }
+
   .hero .container {
-    max-width: 100%;
     top: -10px;
   }
 
   .hero-img {
-    max-width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -823,19 +825,17 @@ h3 {
   }
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
 
   .hero .container {
-    max-width: 100%;
-    top: -10px;
+    margin-top: 30px;
   }
 
   .hero-img {
-    max-width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
@@ -872,13 +872,13 @@ h3 {
   }
 
   .hero .container {
-    top: -60px;
+    margin-top: 60px;
   }
 }
 
 @media (max-width: 378px) {
   .hero .container {
-    top: 0;
+    margin-top: 60px;
   }
 }
 
