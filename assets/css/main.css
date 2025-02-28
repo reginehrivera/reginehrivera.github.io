@@ -1515,15 +1515,15 @@ h3 {
 
 .contact .info-item {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .contact .info-item i {
-  font-size: 20px;
+  font-size: 26px;
   color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 75%);
-  width: 44px;
-  height: 44px;
+  background: color-mix(in srgb, var(--accent-color), transparent 73%);
+  width: 49px;
+  height: 49px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1534,7 +1534,7 @@ h3 {
 
 .contact .info-item h3 {
   padding: 0;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -1542,7 +1542,7 @@ h3 {
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact .info-item:hover i {
@@ -1550,8 +1550,20 @@ h3 {
   color: var(--contrast-color);
 }
 
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
+.info-wrap {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 475px) {
+  .contact .info-item i {
+    font-size: 24px;
+    width: 46px;
+    height: 46px;
   }
 }
