@@ -654,7 +654,8 @@ section .container {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  padding: 80px 0;
+  flex-direction: column;
   justify-content: flex-end;
   text-align: left;
   margin: 0;
@@ -666,7 +667,7 @@ section .container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: -350px;
+  margin-top: -360px;
   width: 100%;
 }
 
@@ -681,7 +682,6 @@ section .container {
 .hero .container {
   position: relative;
   z-index: 3;
-  top: 70px;
 }
 
 .hero h2 {
@@ -781,30 +781,42 @@ h3 {
   .hero-img {
     margin-left: 40px;
   }
-}
 
-@media (min-height: 800px) {
   .hero .container {
-    margin-top: 110px;
-  }
-
-  .hero-img {
-    margin-left: 50px;
+    top: -80px;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1098px) {
+  .hero .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1024px) {
   .hero-img {
     margin-left: 40px;
+  }
+
+  .hero .container {
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: row;
   }
 }
 
 @media (max-width: 1100px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .hero-buttons {
     justify-content: center;
   }
@@ -1498,9 +1510,13 @@ h3 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.65);
   padding: 30px;
-  border-radius: 10px;
   border: 1px solid transparent;
   border-color: #9746da;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
 }
 
 .contact-link {
@@ -1553,14 +1569,6 @@ h3 {
   color: var(--contrast-color);
 }
 
-.info-wrap {
-  max-width: 800px;
-  width: 100%;
-  background: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 368px) {
   .contact .info-item i {
     font-size: 22px;
@@ -1577,4 +1585,10 @@ h3 {
   .contact .info-item p {
     font-size: 13px;
   }
+}
+
+.contact {
+  min-height: 100vh; /* Ensures the section takes up the full height */
+  display: flex;
+  flex-direction: column;
 }
