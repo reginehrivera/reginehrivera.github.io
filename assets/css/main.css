@@ -577,10 +577,11 @@ section .container {
 #testimonials,
 #resume {
   background-image: url("../img/bg.gif");
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 #about::before,
@@ -898,7 +899,7 @@ h3 {
   }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
   .hero .container {
     top: -50px;
   }
