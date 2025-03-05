@@ -558,9 +558,7 @@ section .container {
 #hero,
 #about,
 #skills,
-#interests,
 #contact,
-#counts,
 #portfolio,
 #testimonials,
 #resume {
@@ -574,9 +572,7 @@ section .container {
 
 #about::before,
 #skills::before,
-#interests::before,
 #contact::before,
-#counts::before,
 #portfolio::before,
 #testimonials::before,
 #resume::before {
@@ -608,7 +604,6 @@ section .container {
 
 #about *,
 #skills *,
-#interests *,
 #contact *,
 #counts *,
 #portfolio *,
@@ -947,9 +942,6 @@ section .container {
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .container {
-  top: -50px;
-}
 
 .skills .progress {
   height: 60px;
@@ -1006,7 +998,8 @@ section .container {
 /*--------------------------------------------------------------
 # Interests Section
 --------------------------------------------------------------*/
-.interests .features-item {
+
+.features-item {
   background-color: rgba(105, 26, 196, 0.35);
   display: flex;
   align-items: center;
@@ -1016,13 +1009,13 @@ section .container {
   position: relative;
 }
 
-.interests .features-item i {
+.features-item i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 0;
 }
 
-.interests .features-item h3 {
+.features-item h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -1030,16 +1023,16 @@ section .container {
   font-size: 16px;
 }
 
-.interests .features-item h3 a {
+.features-item h3 a {
   color: var(--heading-color);
   transition: 0.3s;
 }
 
-.interests .features-item:hover {
+.features-item:hover {
   border-color: var(--accent-color);
 }
 
-.interests .features-item:hover h3 a {
+.features-item:hover h3 a {
   color: #ff50ff;
 }
 
