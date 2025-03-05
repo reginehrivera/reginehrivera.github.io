@@ -751,7 +751,7 @@ section .container {
 }
 
 .cv-btn:hover {
-  background: #ddd;
+  background: white;
   color: #440596;
   transform: scale(1.05);
 }
@@ -771,7 +771,7 @@ section .container {
 
   .hero-content h3 {
     font-size: 2.3rem;
-    margin-top: 35px;
+    margin-top: 30px;
   }
 
   .hero-content h2 {
@@ -804,7 +804,13 @@ section .container {
 
   .hero-content h3 {
     font-size: 2rem;
-    margin-top: 45px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 468px) {
+  .hero-content h3 {
+    margin-top: -40px;
   }
 }
 
@@ -812,6 +818,10 @@ section .container {
   .hero-img img {
     width: 290px;
     height: 290px;
+  }
+
+  .hero-content h3 {
+    margin-top: 30px;
   }
 }
 
@@ -896,7 +906,7 @@ section .container {
 --------------------------------------------------------------*/
 .counts {
   padding: 70px 0 60px;
-  margin-top: -50px;
+  margin-top: 70px;
 }
 
 .counts .count-box {
@@ -937,6 +947,10 @@ section .container {
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+.skills .container {
+  top: -50px;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
