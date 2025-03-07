@@ -671,7 +671,7 @@ section .container {
 /* Text Section */
 .hero-content {
   max-width: 500px;
-  top: 35px;
+  margin-top: 35px;
 }
 
 .hero-content h2 {
@@ -757,13 +757,12 @@ section .container {
   .hero-container {
     flex-direction: column;
     text-align: center;
-    margin-top: 15px;
   }
 
   .hero-img img {
     width: 350px;
     height: 350px;
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
   .hero-content h3 {
@@ -791,7 +790,7 @@ section .container {
   .hero-img img {
     width: 350px;
     height: 350px;
-    margin-top: 55px;
+    margin-top: 20px;
   }
 
   .hero-img {
