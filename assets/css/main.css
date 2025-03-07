@@ -671,6 +671,7 @@ section .container {
 /* Text Section */
 .hero-content {
   max-width: 500px;
+  top: 35px;
 }
 
 .hero-content h2 {
@@ -756,17 +757,17 @@ section .container {
   .hero-container {
     flex-direction: column;
     text-align: center;
+    margin-top: 15px;
   }
 
   .hero-img img {
     width: 350px;
     height: 350px;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .hero-content h3 {
     font-size: 2.3rem;
-    margin-top: 30px;
   }
 
   .hero-content h2 {
@@ -790,7 +791,7 @@ section .container {
   .hero-img img {
     width: 350px;
     height: 350px;
-    margin-top: 20px;
+    margin-top: 55px;
   }
 
   .hero-img {
@@ -799,13 +800,6 @@ section .container {
 
   .hero-content h3 {
     font-size: 2rem;
-    margin-top: 40px;
-  }
-}
-
-@media (min-width: 468px) {
-  .hero-content h3 {
-    margin-top: -40px;
   }
 }
 
@@ -813,10 +807,6 @@ section .container {
   .hero-img img {
     width: 290px;
     height: 290px;
-  }
-
-  .hero-content h3 {
-    margin-top: 30px;
   }
 }
 
