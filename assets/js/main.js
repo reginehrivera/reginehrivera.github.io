@@ -318,4 +318,14 @@
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".resume-item img");
+
+    images.forEach((img) => {
+      img.onload = () => {
+        img.classList.add("loaded"); // Add class when image is fully loaded
+      };
+    });
+  });
 })();
