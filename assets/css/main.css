@@ -696,7 +696,7 @@ section .container {
 }
 
 .hero-img img {
-  background: rgba(0, 0, 0, 0.692);
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   max-width: 350px;
   border-radius: 50%;
@@ -728,7 +728,7 @@ section .container {
 
 /* Button */
 .cv-btn {
-  background: rgba(167, 167, 167, 0.2);
+  background: rgba(167, 167, 167, 0.22);
   color: white;
   border: 2px solid white;
   padding: 6px 12px;
@@ -785,8 +785,8 @@ section .container {
   }
 
   .hero-img img {
-    width: 350px;
-    height: 370px;
+    width: 340px;
+    height: 360px;
     margin-top: 20px;
   }
 
@@ -812,7 +812,7 @@ section .container {
 
 @media (max-width: 300px) {
   .hero-img img {
-    width: 260px;
+    width: 250px;
     height: 260px;
   }
 
