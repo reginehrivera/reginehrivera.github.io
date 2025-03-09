@@ -1549,7 +1549,7 @@ a:hover i {
 
 .custom-close {
   position: absolute;
-  top: 50px;
+  top: -10px;
   left: 95%;
   width: 35px;
   height: 35px;
