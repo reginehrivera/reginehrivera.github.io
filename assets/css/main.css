@@ -696,7 +696,7 @@ section .container {
 }
 
 .hero-img img {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
   width: 100%;
   max-width: 350px;
   border-radius: 50%;
@@ -757,8 +757,8 @@ section .container {
   }
 
   .hero-img img {
-    width: 350px;
-    height: 380px;
+    width: 340px;
+    height: 360px;
     margin-top: 20px;
   }
 
@@ -785,8 +785,8 @@ section .container {
   }
 
   .hero-img img {
-    width: 340px;
-    height: 360px;
+    width: 330px;
+    height: 350px;
     margin-top: 20px;
   }
 
@@ -805,14 +805,14 @@ section .container {
 
 @media (max-width: 368px) {
   .hero-img img {
-    width: 290px;
-    height: 310px;
+    width: 280px;
+    height: 300px;
   }
 }
 
 @media (max-width: 300px) {
   .hero-img img {
-    width: 250px;
+    width: 240px;
     height: 260px;
   }
 
@@ -1549,7 +1549,7 @@ a:hover i {
 
 .custom-close {
   position: absolute;
-  top: -10px;
+  top: 50px;
   left: 95%;
   width: 35px;
   height: 35px;
@@ -1564,6 +1564,7 @@ a:hover i {
   z-index: 10000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
+  z-index: 1zzz;
 }
 
 .custom-close:hover {
