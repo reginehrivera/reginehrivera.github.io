@@ -328,4 +328,38 @@
       };
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all modal open buttons
+    const openModalBtns = document.querySelectorAll("[id^=openModalBtn]");
+
+    openModalBtns.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const modalId = btn.getAttribute("data-modal-id"); // Get modal ID
+        const modal = document.getElementById(modalId);
+        if (modal) modal.classList.add("show"); // Add 'show' class
+      });
+    });
+
+    // Get all close buttons
+    const closeModalBtns = document.querySelectorAll(".custom-close");
+
+    closeModalBtns.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const modal = btn.closest("div[id^=customModal]"); // Find the closest modal
+        if (modal) modal.classList.remove("show"); // Remove 'show' class
+      });
+    });
+
+    // Close modal when clicking outside
+    const modals = document.querySelectorAll("div[id^=customModal]");
+
+    modals.forEach((modal) => {
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.classList.remove("show"); // Remove 'show' class
+        }
+      });
+    });
+  });
 })();

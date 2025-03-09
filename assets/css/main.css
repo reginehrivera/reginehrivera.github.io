@@ -1060,6 +1060,10 @@ section .container {
   margin-bottom: 10px;
 }
 
+.resume h3 {
+  font-family: var(--title-font);
+}
+
 .resume .resume-item h5 {
   font-size: 16px;
   padding: 5px 15px;
@@ -1483,4 +1487,107 @@ a:hover i {
   min-height: 100vh; /* Ensures the section takes up the full height */
   display: flex;
   flex-direction: column;
+}
+
+#customModal1,
+#customModal2,
+#customModal3,
+#customModal4,
+#customModal5 {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#customModal1.show,
+#customModal2.show,
+#customModal3.show,
+#customModal4.show,
+#customModal5.show {
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.custom-modal-content {
+  position: relative;
+  box-shadow: 0 0 7px rgba(175, 7, 241, 5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in-out;
+}
+
+#customModal1.show .custom-modal-content,
+#customModal2.show .custom-modal-content,
+#customModal3.show .custom-modal-content,
+#customModal4.show .custom-modal-content,
+#customModal5.show .custom-modal-content {
+  transform: scale(1);
+}
+
+.custom-modal-content img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 75vh;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-close {
+  position: absolute;
+  top: -10px;
+  left: 95%;
+  width: 35px;
+  height: 35px;
+  background: rgba(159, 45, 224, 0.8);
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.custom-close:hover {
+  background: rgb(150, 44, 211);
+  color: black;
+}
+
+i#openModalBtn {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+i#openModalBtn:hover {
+  color: white !important;
+  transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .custom-modal-content img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 75vh;
+  }
+
+  .custom-close {
+    left: 92%;
+  }
 }
