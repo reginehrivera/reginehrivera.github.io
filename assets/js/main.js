@@ -291,73 +291,108 @@
   new PureCounter();
 
   document.addEventListener("DOMContentLoaded", function () {
+    // Profile image modal
     const profileImage = document.getElementById("profileImage");
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
     const closeModal = document.getElementById("closeModal");
 
-    // Toggle modal when profile image is clicked
-    profileImage.addEventListener("click", function () {
-      if (modal.classList.contains("show")) {
-        modal.classList.remove("show");
-      } else {
+    if (profileImage && modal && modalImg) {
+      profileImage.addEventListener("click", function () {
         modalImg.src = profileImage.src;
         modal.classList.add("show");
-      }
-    });
+        modal.style.visibility = "visible";
+        modal.style.opacity = "1";
+      });
 
-    // Close modal when "X" button is clicked
-    closeModal.addEventListener("click", function () {
-      modal.classList.remove("show");
-    });
-
-    // Close modal when clicking outside the image
-    modal.addEventListener("click", function (event) {
-      if (event.target === modal) {
+      closeModal.addEventListener("click", function () {
         modal.classList.remove("show");
-      }
-    });
-  });
+        setTimeout(() => {
+          modal.style.visibility = "hidden";
+          modal.style.opacity = "0";
+        }, 500);
+      });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".resume-item img");
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.classList.remove("show");
+          setTimeout(() => {
+            modal.style.visibility = "hidden";
+            modal.style.opacity = "0";
+          }, 500);
+        }
+      });
+    }
 
-    images.forEach((img) => {
-      img.onload = () => {
-        img.classList.add("loaded"); // Add class when image is fully loaded
-      };
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get all modal open buttons
+    // Resume Certificate Modals
     const openModalBtns = document.querySelectorAll("[id^=openModalBtn]");
 
     openModalBtns.forEach((btn) => {
       btn.addEventListener("click", function () {
-        const modalId = btn.getAttribute("data-modal-id"); // Get modal ID
+        const modalId = btn.getAttribute("data-modal-id");
         const modal = document.getElementById(modalId);
-        if (modal) modal.classList.add("show"); // Add 'show' class
+        const modalContent = modal.querySelector(".custom-modal-content");
+        const modalImage = modal.querySelector("img");
+
+        if (modal) {
+          modal.classList.add("show");
+          modal.style.visibility = "visible";
+          modal.style.opacity = "1";
+
+          // Ensure modal content and image fade in properly
+          setTimeout(() => {
+            modalContent.style.opacity = "1";
+            modalContent.style.transform = "scale(1)";
+            modalImage.style.opacity = "1";
+            modalImage.style.transform = "scale(1)";
+          }, 50);
+        }
       });
     });
 
-    // Get all close buttons
+    // Close buttons
     const closeModalBtns = document.querySelectorAll(".custom-close");
 
     closeModalBtns.forEach((btn) => {
       btn.addEventListener("click", function () {
-        const modal = btn.closest("div[id^=customModal]"); // Find the closest modal
-        if (modal) modal.classList.remove("show"); // Remove 'show' class
+        const modal = btn.closest("div[id^=customModal]");
+        const modalContent = modal.querySelector(".custom-modal-content");
+        const modalImage = modal.querySelector("img");
+
+        if (modal) {
+          modalContent.style.opacity = "0";
+          modalContent.style.transform = "scale(0.5)";
+          modalImage.style.opacity = "0";
+          modalImage.style.transform = "scale(0.5)";
+
+          setTimeout(() => {
+            modal.classList.remove("show");
+            modal.style.visibility = "hidden";
+            modal.style.opacity = "0";
+          }, 500);
+        }
       });
     });
 
-    // Close modal when clicking outside
+    // Click outside modal to close
     const modals = document.querySelectorAll("div[id^=customModal]");
 
     modals.forEach((modal) => {
       modal.addEventListener("click", function (event) {
         if (event.target === modal) {
-          modal.classList.remove("show"); // Remove 'show' class
+          const modalContent = modal.querySelector(".custom-modal-content");
+          const modalImage = modal.querySelector("img");
+
+          modalContent.style.opacity = "0";
+          modalContent.style.transform = "scale(0.5)";
+          modalImage.style.opacity = "0";
+          modalImage.style.transform = "scale(0.5)";
+
+          setTimeout(() => {
+            modal.classList.remove("show");
+            modal.style.visibility = "hidden";
+            modal.style.opacity = "0";
+          }, 500);
         }
       });
     });
