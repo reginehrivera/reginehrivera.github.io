@@ -299,29 +299,35 @@
 
     if (profileImage && modal && modalImg) {
       profileImage.addEventListener("click", function () {
-        modalImg.src = profileImage.src;
-        modal.classList.add("show");
-        modal.style.visibility = "visible";
-        modal.style.opacity = "1";
+        if (modal.classList.contains("show")) {
+          // If modal is open, close it
+          closeImageModal();
+        } else {
+          // Open the modal
+          modalImg.src = profileImage.src;
+          modal.classList.add("show");
+          modal.style.visibility = "visible";
+          modal.style.opacity = "1";
+        }
       });
 
       closeModal.addEventListener("click", function () {
+        closeImageModal();
+      });
+
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          closeImageModal();
+        }
+      });
+
+      function closeImageModal() {
         modal.classList.remove("show");
         setTimeout(() => {
           modal.style.visibility = "hidden";
           modal.style.opacity = "0";
         }, 500);
-      });
-
-      modal.addEventListener("click", function (event) {
-        if (event.target === modal) {
-          modal.classList.remove("show");
-          setTimeout(() => {
-            modal.style.visibility = "hidden";
-            modal.style.opacity = "0";
-          }, 500);
-        }
-      });
+      }
     }
 
     // Resume Certificate Modals
@@ -361,32 +367,9 @@
 
         if (modal) {
           modalContent.style.opacity = "0";
-          modalContent.style.transform = "scale(0.5)";
+          modalContent.style.transform = "scale(0.8)";
           modalImage.style.opacity = "0";
-          modalImage.style.transform = "scale(0.5)";
-
-          setTimeout(() => {
-            modal.classList.remove("show");
-            modal.style.visibility = "hidden";
-            modal.style.opacity = "0";
-          }, 500);
-        }
-      });
-    });
-
-    // Click outside modal to close
-    const modals = document.querySelectorAll("div[id^=customModal]");
-
-    modals.forEach((modal) => {
-      modal.addEventListener("click", function (event) {
-        if (event.target === modal) {
-          const modalContent = modal.querySelector(".custom-modal-content");
-          const modalImage = modal.querySelector("img");
-
-          modalContent.style.opacity = "0";
-          modalContent.style.transform = "scale(0.5)";
-          modalImage.style.opacity = "0";
-          modalImage.style.transform = "scale(0.5)";
+          modalImage.style.transform = "scale(0.8)";
 
           setTimeout(() => {
             modal.classList.remove("show");
