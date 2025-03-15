@@ -1250,6 +1250,10 @@ i#openModalBtn5:hover {
   margin-bottom: 60px;
 }
 
+.portfolio {
+  margin-left: -10px;
+}
+
 .portfolio .portfolio-item img {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
